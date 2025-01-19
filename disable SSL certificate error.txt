@@ -1,0 +1,18 @@
+Disable SSL Certificate Validation
+To bypass SSL validation in Newman:
+
+newman run <collection-file.json> --insecure
+
+The --insecure flag tells Newman to ignore SSL certificate errors.
+
+execute below line:
+-----------------------
+newman run Products.postman_collection.json -d product_data.json -g workspace.postman_globals.json --insecure
+
+for report:
+-------------------
+newman run Products.postman_collection.json -d product_data.json -g workspace.postman_globals.json -r htmlextra --insecure
+
+for specific change in report (Browser Title and Page Title)
+----------------------------------
+newman run Products.postman_collection.json -d product_data.json -g workspace.postman_globals.json -r htmlextra --reporter-htmlextra-export ./results/report.html --reporter-htmlextra-browserTitle "Store API Test Report" --reporter-htmlextra-title "Store API Test Summary" --insecure

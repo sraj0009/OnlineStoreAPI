@@ -1,0 +1,11 @@
+java -jar Jenkins.war 
+
+
+if not running, use below commands
+java -jar jenkins.war -enable-future-java
+
+----------------------------
+
+keytool -importcert -trustcacerts -alias jenkins-update-site -file C:\Users\XS432KN\Downloads\updates.jenkins.io.crt -keystore "C:\Program Files\Java\jdk-21\lib\security\cacerts" -storepass changeit
+
+keytool -importcert -trustcacerts -alias get-genkins -file C:\Users\XS432KN\Downloads\get.jenkins.io.crt -keystore "C:\Program Files\Java\jdk-21\lib\security\cacerts" -storepass changeit

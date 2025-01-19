@@ -1,0 +1,38 @@
+https://github.com/sraj0009/OnlineStoreAPI.git
+
+
+1. create new local repository
+	git init
+2. attach local repo with remote repo
+	git remote add origin https://github.com/sraj0009/OnlineStoreAPI.git
+3. add project files to index/staging
+	git add -A
+4. commit the files into git(local)
+	git commit -m "commit msg"
+5. push the files into remote repo
+	git push origin master
+	git push origin master --force
+
+username, password(token)
+
+password/token - 	use from github --> personal access token
+
+-------------------------------------------------------------
+1. Temporarily Disable SSL Verification
+You can bypass SSL verification for the current operation using:
+
+git -c http.sslVerify=false push origin master
+
+This disables SSL verification for this specific command, allowing the push to proceed.
+
+2. Permanently Disable SSL Verification (Not Recommended)
+If the problem persists and you want to disable SSL verification permanently:
+
+git config --global http.sslVerify false
+
+Caution: Disabling SSL verification globally can expose you to security risks, as Git will no longer validate server certificates.
+
+----------
+
+
+
