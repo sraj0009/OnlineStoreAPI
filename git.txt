@@ -33,6 +33,6 @@ git config --global http.sslVerify false
 Caution: Disabling SSL verification globally can expose you to security risks, as Git will no longer validate server certificates.
 
 ----------
-Sumant
+Sumant - updated
 
 
